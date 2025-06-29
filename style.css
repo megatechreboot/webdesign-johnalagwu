@@ -1,0 +1,301 @@
+
+    :root {
+  --primary-blue: #2563eb;
+  --hover-blue: #1d4ed8;
+  --text-dark: #1e293b;
+  --body-bg: #ffffff;
+  --card-bg: #ffffff;
+  --box-shadow: ;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      font-family: Arial, 'Segoe UI', Tahoma, Sans-Serif;
+      background: var(--body-bg);
+      position: relative;
+      color: var(--text-dark);
+      min-height: 100px;
+      overflow-x: hidden;
+      line-height: 1.6;
+      z-index: 0;
+      overflow-x: hidden;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(29, 78, 216, 0.1));
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .navbar {
+      display: flex;
+      background: var(--primary-blue);
+      position: relative;
+      z-index: 3;
+      color: white;
+      padding: 1rem 2rem;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 7px rgba(39,100,235,0.9);
+    }
+    
+    .navLinks {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      gap: 1.6rem;
+      padding: 1rem;
+      color: white;
+    }
+    
+    .navbar ul {
+      display: flex;
+    }
+    
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .logo {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+      
+    .hero {
+      display: none;
+      padding: 4rem 2rem;
+      min-height: 80vh;
+      text-align: center;
+      background-color: #f8fafc;
+      z-index: 2;
+      position: relative;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--primary-blue);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+    
+    .hero h3 {
+      font-size: 1.7rem;
+      color: var(--text-dark);
+      padding-top: 1rem;
+    }
+    
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.125rem;
+    }
+    
+    p {
+      margin-top: 1rem;
+      font-size: 1.125rem;
+    }
+    
+    /* Cards */
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      width: 40%;
+      margin-top: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      z-index: 2;
+      position: relative;
+    }
+    
+    .form-container {
+      display: block;
+      background-color: var(--card-bg);
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 600px;
+      width: 90%;
+      margin-top: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      z-index: 2;
+    }
+    
+    .form-container input,
+    .form-container textarea {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Button */
+    .btn {
+      background-color: var(--primary-blue);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border: none;
+      align-content: center;
+      width: 40%;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 2;
+      position: relative;
+      margin: auto;
+      margin-top: 3rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:hover {
+      background-color: var(--hover-blue);
+    }
+    
+    Button a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .get {
+      display: flex;
+    }
+    
+    form {
+      display: block;
+      margin: auto;
+      align-items: center;
+    }
+    
+    .hero.active {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .b-line {
+      border: 0.8px solid var(--primary-blue);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 10px;
+      display: block;
+      background: var(--primary-blue);
+      box-shadow: 0 4px 6px rgba(39,100,235,0.9);
+      color: white;
+    }
+    
+    footer p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    
+    .social {
+      margin-top: 10px;
+    }
+    
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    
+    .social a:hover {
+      color: #ffd700;
+    }
+    
+    .float {
+      display: none;
+      
+    }
+    
+    @media (max-width: 768px) {
+      .navbar {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .logo {
+        font-size: 1.3rem;
+      }
+      
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero h3 {
+        font-size: 1.3rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .navLinks {
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+        gap: 10px;
+        margin-top: 0.6rem;
+        font-weight: bold;
+      }
+      
+      .float {
+        display: block;
+        font-size: 3rem;
+        position: fixed;
+        z-index: 5;
+        margin-left: 0;
+        color: green;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      }
+      
+      .float a {
+        color: green;
+      }
+      
+      .mob {
+        flex-direction: column;
+      }
+      #mob {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      footer p {
+        font-size: 1rem;
+      }
+      
+      .btn {
+        width: 50%;
+      }
+      
+      .social a {
+        font-size: 1rem;
+      }
+      
+      .float a:hover {
+        color: #ffd700;
+      }
